@@ -24,9 +24,12 @@
 
         ::placeholder {
             color: red;
+            font-family: Lucida Handwriting;
+            opacity: .5;
         }
 
         body {
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Download-Gif-Pictures.gif");
             background-color: powderblue;
         }
 
@@ -41,6 +44,76 @@
             border-radius: 6px 24px 6px 24px;
             box-shadow: 5px 5px 3px 1px #999;
             text-shadow: -2px 2px 2px blue;
+
+            position: relative;
+            background-color: powderblue;
+            /* animation-name: example; */
+            /* animation-duration: 6s; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            animation: color_motion 6s ease-in-out 3s infinite alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes color_motion {
+            0% {
+                color: red;
+                background-color: lightyellow;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                color: blue;
+                background-color: yellow;
+                left: 33px;
+                top: 0px;
+            }
+
+            50% {
+                color: green;
+                background-color: orange;
+                left: 33px;
+                top: 33px;
+            }
+
+            75% {
+                color: red;
+                background-color: orangered;
+                left: 0px;
+                top: 33px;
+            }
+
+            100% {
+                color: blue;
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes color {
+            0% {
+                color: lightyellow;
+            }
+
+            25% {
+                color: yellow;
+            }
+
+            50% {
+                color: orange;
+            }
+
+            75% {
+                color: orangered;
+            }
+
+            100% {
+                color: red;
+            }
         }
 
         h2 {
@@ -49,11 +122,12 @@
             font-size: 160%;
             font-family: Papyrus;
             text-align: center;
+            animation: color 6s ease-in-out 3s infinite alternate;
         }
     </style>
 </head>
 
-<body type="square" style="color: teal; font-size: 20px; font-style: bold; font-family: cursive;">
+<body type="square" style="color: green; font-size: 17 px; font-style: normal; font-family: cursive;">
     <header style="text-align: center;">
         <h1>Crash<sub>Overrider</sub></h1>
         <img src="https://avatars.githubusercontent.com/u/91897336?v=4" alt="Profile pic" width="130px" height="130">
@@ -66,42 +140,32 @@
     </header>
     <main>
         <section>
-            <div>
-                <h2>Education</h2>
-            </div>
-            <span>
-                <ol type="i">
-                    <li>10<sup>th</sup> <br>
-                        <i><em><a href="https://www.facebook.com/people/Gourhati-Haradas-Institution/100066517309624/">Gourhati
-                                    Haradas Institution</a></em></i>
-                    </li>
-                    <li>12<sup>th</sup> <br>
-                        <i><em><a href="https://www.facebook.com/Arambagh.High.School/">Arambagh High
-                                    School</a></em></i>
-                    </li>
-                    <li>BTech<br>
-                        <i><em><a href="https://tint.edu.in/">Techno International Newtown</a></em></i>
-                    </li>
-                </ol>
+            <span style="text-align: center;">
+                <h2>Information</h2>
+                I am an software engineer. I have started learning web dev. This is my first website. Now I'm just using
+                html and css, I will learn bootstramp and js to modify this site, and later on this site will be on
+                firebase. Now it's just frontend. Evaluate this site and give me some suggesion.
             </span>
         </section>
         <article>
             <h2>Qualifications</h2>
-            <ul>
+            <ol type="i">
                 <li><small>C coding - ⭐⭐⭐⭐</small><br></li>
                 <li><small>Python coding - ⭐⭐</small><br></li>
                 <li><small>C<sub>pp</sub> coding - ⭐⭐⭐⭐</small> <br></li>
-                <li><small>IOT based projects on Water Harvesting System</small> <br></li>
+                <li><small>IOT based projects on Wifi calling using audrino uno</small> <br></li>
                 <li><small>Project on Smart contract using Etherium</small> <br> <br></li>
-            </ul>
+            </ol>
             <div>
+                <h2>Grades</h2>
                 <table>
-                    <caption><u><big><strong>Exam Results</strong></big></u></caption>
+                    <!-- <caption><u><big><strong>Qualifications</strong></big></u></caption> -->
                     <thead>
                         <tr>
                             <th>S. No.</th>
                             <th>Exam Name</th>
-                            <th colspan="2">marks</th>
+                            <th>Marks</th>
+                            <th>Institution</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,16 +173,22 @@
                             <td>1.</td>
                             <td>10<sup>th</sup></td>
                             <td>95%</td>
+                            <td><i><a
+                                        href="https://www.facebook.com/people/Gourhati-Haradas-Institution/100066517309624/">Gourhati
+                                        Haradas Institution</a></i></td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td>12<sup>th</sup></td>
                             <td>91%</td>
+                            <td><i><em><a href="https://www.facebook.com/Arambagh.High.School/">Arambagh High
+                                            School</a></em></i></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>1<sup>st</sup>Y</td>
                             <td>96%</td>
+                            <td><i><em><a href="https://tint.edu.in/">Techno International Newtown</a></em></i></td>
                         </tr>
                     </tbody>
                 </table>
@@ -131,7 +201,7 @@
                 <h3>Share your details</h3>
                 <hr>
                 <form action="form.php">
-                    <input type="text" placeholder="Enter Your Name"><br><br>
+                    <input type="text" placeholder="Your name"><br><br>
                     Share your picture &#8628; <br>
                     <input type="file" name="image" id="image"> <br><br>
                     <select name="sex" id="sex">
@@ -165,19 +235,19 @@
 
         </aside>
     </main>
-    <footer style="text-align: center;">
+    <footer style="text-align: center;color: teal; font-size: 18px; font-style: normal;">
         <hr>
-        <br><b style="color: teal; font-size: 18px; font-style: bold;">Follow me</b><br><br>
+        <br><b>Follow me</b><br><br>
         <!-- Absolute link -->
         <a href="https://github.com/Sankhadip-Roy" target="_blank"> <img
                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" width="30px"> </a>
-        <a href="https://www.hackerrank.com/sankhadiproy23" target="_main"> <img
+        <a href="https://www.hackerrank.com/Sankhadip_Roy23" target="_main"> <img
                 src="https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png" alt="HackerRank"
                 width="30px"> </a>
         <a href="https://www.youtube.com/channel/UCpbmKN9SweCQIupqmV8lfcw" target="_blank"> <img
                 src="https://i.pinimg.com/564x/7d/c9/93/7dc993c70d4adba215b87cafdc59d82d.jpg" alt="Youtube"
                 width="30px"> </a><br><br>
-        <b style="color: teal; font-size: 18px; font-style: bold;">My youtube video</b><br><br>
+        <b>My youtube video</b><br><br>
         <iframe width="250" height="150" src="https://www.youtube.com/embed/R0swogamAuM" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
