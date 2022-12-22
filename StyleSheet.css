@@ -54,22 +54,22 @@
         25% {
             color: blue;
             background-color: yellow;
-            left: 33px;
+            left: 25px;
             top: 0px;
         }
 
         50% {
             color: green;
             background-color: orange;
-            left: 33px;
-            top: 33px;
+            left: 25px;
+            top: 25px;
         }
 
         75% {
             color: red;
             background-color: orangered;
             left: 0px;
-            top: 33px;
+            top: 25px;
         }
 
         100% {
