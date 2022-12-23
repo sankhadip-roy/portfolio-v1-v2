@@ -1,3 +1,30 @@
+    body {
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Download-Gif-Pictures.gif");
+        background-color: powderblue;
+        color: green;
+        font-size: 17 px;
+        font-style: normal;
+        font-family: Fira Code;
+    }
+
+    body header {
+        text-align: center;
+    }
+
+    main section span {
+        text-align: center;
+    }
+
+    main aside div {
+        padding: 30px;
+        border: 2px solid rgb(69, 69, 221);
+        margin: 10px;
+        box-shadow: inset 0 0 10px 8px skyblue;
+        border-radius: 35px/50px;
+        color: aquamarine;
+        font-family: JetBrains Mono;
+    }
+
     ::-webkit-input-placeholder {
         /* Edge */
         color: red;
@@ -14,9 +41,16 @@
         opacity: .5;
     }
 
-    body {
-        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Download-Gif-Pictures.gif");
-        background-color: powderblue;
+    footer {
+        text-align: center;
+        color: teal;
+        font-size: 18px;
+        font-style: normal;
+    }
+
+    footer pre {
+        color: teal;
+        font-size: 20px
     }
 
     h1 {
@@ -41,6 +75,21 @@
         /* animation-direction: alternate; */
         animation: color_motion 6s ease-in-out 3s infinite alternate;
         animation-fill-mode: forwards;
+    }
+
+    h2 {
+        color: green;
+        font-family: courier;
+        font-size: 160%;
+        font-family: Papyrus;
+        text-align: center;
+        animation: color 6s ease-in-out 3s infinite alternate;
+    }
+
+    h4 {
+        animation: color 6s ease-in-out 3s infinite alternate;
+        font-family: cursive;
+        text-align: center;
     }
 
     @keyframes color_motion {
@@ -100,13 +149,4 @@
         100% {
             color: red;
         }
-    }
-
-    h2 {
-        color: green;
-        font-family: courier;
-        font-size: 160%;
-        font-family: Papyrus;
-        text-align: center;
-        animation: color 6s ease-in-out 3s infinite alternate;
     }
