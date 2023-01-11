@@ -84,11 +84,11 @@ h1 {
     font-family: verdana;
     font-size: 300%;
     border: 2px solid green;
-    padding: 30px;
-    margin: 25px;
+    padding: 10px;
+    margin: 40px;
     font-family: "Lucida Console", "Courier New", monospace;
-    border-radius: 6px 24px 6px 24px;
-    box-shadow: 5px 5px 3px 1px #999;
+    border-radius: 3px 12px 3px 12px;
+    box-shadow: 2.5px 2.5px 1.5px 1px #999;
     text-shadow: -2px 2px 2px blue;
 
     position: relative;
@@ -121,7 +121,7 @@ h4 {
 
 @keyframes color_motion {
     0% {
-        color: red;
+        color: green;
         background-color: red;
         /* background-image: url('https: //i.pcmag.com/imagery/reviews/02yVL9f8Jw1atwoG6sgFZDH-7.fit_scale.size_1028x578.v1569482492.jpg'); */
         left: 0px;
@@ -138,12 +138,13 @@ h4 {
     50% {
         color: green;
         background-color: blue;
+        background: transparent;
         left: 25px;
         top: 25px;
     }
 
     75% {
-        color: red;
+        color: blue;
         background-color: red;
         background: transparent;
         left: 0px;
@@ -151,8 +152,8 @@ h4 {
     }
 
     100% {
-        color: blue;
-        background-color: green;
+        color: green;
+        background-color: blue;
         left: 0px;
         top: 0px;
     }
