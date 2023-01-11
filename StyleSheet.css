@@ -1,7 +1,6 @@
 #style {
     /* background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Download-Gif-Pictures.gif");
     background-color: powderblue; */
-    /* background-image: linear-gradient(to bottom right, white, rgb(235, 242, 243)); */
     background-image: linear-gradient(to bottom right, black, rgb(32, 29, 29));
     background-attachment: fixed;
     color: rgb(13, 163, 13);
@@ -123,8 +122,8 @@ h4 {
 @keyframes color_motion {
     0% {
         color: red;
-        /* background-color: red; */
-        background-image: url('https: //i.pcmag.com/imagery/reviews/02yVL9f8Jw1atwoG6sgFZDH-7.fit_scale.size_1028x578.v1569482492.jpg');
+        background-color: red;
+        /* background-image: url('https: //i.pcmag.com/imagery/reviews/02yVL9f8Jw1atwoG6sgFZDH-7.fit_scale.size_1028x578.v1569482492.jpg'); */
         left: 0px;
         top: 0px;
     }
@@ -146,6 +145,7 @@ h4 {
     75% {
         color: red;
         background-color: red;
+        background: transparent;
         left: 0px;
         top: 25px;
     }

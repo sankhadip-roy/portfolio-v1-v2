@@ -10,9 +10,7 @@
 
     <title>Sankhadip Roy's Website</title>
 
-    <link rel="shortcut icon"
-        href="https://previews.123rf.com/images/krustovin/krustovin1903/krustovin190300297/119658164-creative-initial-sr-letter-black-colors-vector-logo-illustration.jpg"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="/My-Website/images/faviconHome.png" type="image/x-icon">
 
     <script src="script.js"></script>
     <link href="StyleSheet.css" rel="stylesheet">
@@ -24,7 +22,7 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Sankhadip Roy</a>
+    <!-- <a class="navbar-brand" href="#">Sankhadip Roy</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,11 +31,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/My-Website/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://i.imgflip.com/54cavn.jpg">About</a>
-                <!-- <a href="/about.html">about &rarr;</a> -->
+                <a class="nav-link" href="/My-Website/about.html">About</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -54,7 +51,7 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact Us</a>
+                <a class="nav-link" href="/My-Website/contact.html">Contact Us</a>
             </li>
 
 
@@ -71,36 +68,9 @@
 </nav>
 
 <body type="square" id="style">
-    <header>
-
-        <h1>SANKHADIP ROY</h1>
-        <img src="https://avatars.githubusercontent.com/u/91897336?v=4" alt="Profile pic" width="130px" height="130">
-        <hr>
-    </header>
-    <marquee behavior="scroll" direction="right" width="100%" height="100px">
-        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
-            data-type="VERTICAL" data-vanity="sankhadip-roy" data-version="v1"><a
-                class="badge-base__link LI-simple-link"
-                href="https://in.linkedin.com/in/sankhadip-roy?trk=profile-badge" target="_blank">Sankhadip Roy</a>
-        </div>
-    </marquee>
-    <div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
-
-        <button id="showAlert">Alert</button>
-        <script>
-            $("#showAlert").click(function () {
-                Swal.fire(
-                    'If you are using a phone, then switch to Desktop Mode.',
-                )
-            });
-        </script>
-    </div>
-
-
     <main>
         <section>
+
             <!-- Include all compiled plugins (below), or include individual files as needed -->
             <!-- <script src="js/bootstrap.min.js"></script>
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -115,10 +85,37 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div> -->
 
+            <header>
+                <h1>SANKHADIP ROY</h1>
+                <img src="https://avatars.githubusercontent.com/u/91897336?v=4" alt="Profile pic" width="130px"
+                    height="130">
+                <hr>
+            </header>
+            <marquee behavior="scroll" direction="right" width="100%" height="100px">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+                    data-type="VERTICAL" data-vanity="sankhadip-roy" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://in.linkedin.com/in/sankhadip-roy?trk=profile-badge" target="_blank">Sankhadip
+                        Roy</a>
+                </div>
+            </marquee>
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+
+                <button id="showAlert">Alert</button>
+                <script>
+                    $("#showAlert").click(function () {
+                        Swal.fire(
+                            'If you are using a phone, then switch to Desktop Mode.',
+                        )
+                    });
+                </script>
+            </div>
             <!-- <div id="confirm">
-                <div class="message">If you are using a phone, then switch to Desktop Mode.</div>
-                <button class="ok">OK</button>
-            </div> -->
+                            <div class="message">If you are using a phone, then switch to Desktop Mode.</div>
+                            <button class="ok">OK</button>
+                        </div> -->
             <!-- <input type="button" value="Alert" onclick="showAlert();" /> -->
             <span>
                 <h2>Information</h2>
@@ -183,7 +180,7 @@
         </article>
         <br>
         <aside>
-            <div>
+            <!-- <div>
                 <h4>Share your details</h4>
                 <hr>
                 <form action="form.php">
@@ -219,9 +216,7 @@
                     <textarea name="about" id="about" cols="20" rows="5">Your feedback.....</textarea><br><br>
                     <input type="submit" value="submit">&#8672;<small>click to submit</small>
                 </form>
-            </div>
-
-
+            </div> -->
         </aside>
     </main>
     <footer>
@@ -243,10 +238,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         <!-- <video src="https://video.link/w/0hGxd" controls autoplay loop></video> -->
-        <pre>𝕬𝖑𝖑 𝖗𝖎𝖌𝖍𝖙𝖘 𝕽𝖊𝖘𝖊𝖗𝖛𝖊𝖉®   𝕾𝖆𝖓𝖐𝖍𝖆𝖉𝖎𝖕 𝕽𝖔𝖞   ©2022</pre>
-
-
-
+        <pre>𝕬𝖑𝖑 𝖗𝖎𝖌𝖍𝖙𝖘 𝕽𝖊𝖘𝖊𝖗𝖛𝖊𝖉&#174;   𝕾𝖆𝖓𝖐𝖍𝖆𝖉𝖎𝖕 𝕽𝖔𝖞 &#169;2022</pre>
     </footer>
 </body>
 

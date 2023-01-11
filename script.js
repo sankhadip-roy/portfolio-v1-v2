@@ -23,4 +23,3 @@ function age() {
     }
 }
 setTimeout(age, 50000);
-
