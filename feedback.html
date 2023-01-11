@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="images/faviconSuggestion.jpg" type="image/x-icon">
-    <!-- <link href="StyleSheet.css" rel="stylesheet"> -->
+    <link href="StyleSheet.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -91,7 +91,7 @@
                 <label for="exampleFormControlTextarea2">Elaborate Your Suggesion</label>
                 <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" id="submit">Submit</button>
         </form>
 
         <br><br>
@@ -102,7 +102,7 @@
             Share your picture &#8628; <br>
             <input type="file" name="image" id="image"> <br><br>
             <select name="sex" id="sex">
-                <option value="defaut">gender</option>
+                <option value="default">gender</option>
                 <option value="male">XY</option>
                 <option value="female">XX</option>
                 <option value="trans">XXY</option>
@@ -126,7 +126,7 @@
                 <textarea name="about" class="form-control" id="exampleFormControlTextarea1" cols="50"
                     rows="3">Your feedback.....</textarea>
             </div>
-            <input type="submit" value="submit">&#8672;<small>click to submit</small>
+            <input type="submit" value="submit" id="submit">&#8672;<small>click to submit</small>
         </form>
     </div>
     <footer class="container">

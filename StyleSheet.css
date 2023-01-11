@@ -9,24 +9,6 @@
     font-family: Arial;
 }
 
-button {
-    text-align: center;
-    color: green;
-    background-color: powderblue;
-}
-
-#confirm {
-    display: none;
-    background-color: black;
-    border: 1px solid;
-    position: fixed;
-    width: 500px;
-    left: 50%;
-    margin-left: -100px;
-    padding: 25px;
-    text-align: center;
-}
-
 body header {
     text-align: center;
 }
@@ -49,22 +31,6 @@ main aside div {
     border-radius: 35px/50px;
     color: rgb(13, 163, 13);
     font-family: JetBrains Mono;
-}
-
-::-webkit-input-placeholder {
-    /* Edge */
-    color: red;
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer */
-    color: red;
-}
-
-::placeholder {
-    color: red;
-    font-family: Lucida Handwriting;
-    opacity: .5;
 }
 
 footer {
@@ -118,6 +84,54 @@ h4 {
     text-align: center;
     animation: color 6s ease-in-out 3s infinite alternate;
 }
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: red;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer */
+    color: red;
+}
+
+::placeholder {
+    color: teal;
+    font-family: Berlin Sans;
+    opacity: .5;
+}
+
+#submit {
+    background-image: linear-gradient(to bottom right, #007bff, #007bff);
+    color: white;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to bottom right, powderblue, #007bff);
+    color: white;
+}
+
+#showAlert {
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+#showAlert:hover {
+    background-image: linear-gradient(to bottom right, white, yellow);
+}
+
+/* #confirm {
+    display: none;
+    background-color: black;
+    border: 1px solid;
+    position: fixed;
+    width: 500px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 25px;
+    text-align: center;
+} */
 
 @keyframes color_motion {
     0% {
