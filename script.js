@@ -1,3 +1,3 @@
 function oldWeb() {
-    window.open('oldWebsite/oldWebsite.html', '_self');
+    window.open('oldWebsite.html', '_self');
 }
