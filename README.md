@@ -1,2 +1,2 @@
-This is my first website (portfolio).
+This is my portfolio website.
 just started learning Web Dev.
