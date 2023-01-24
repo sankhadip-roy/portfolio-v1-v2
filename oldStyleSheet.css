@@ -118,6 +118,7 @@ h4 {
     color: white;
 }
 
+
 #showAlert {
     text-align: center;
     color: black;
@@ -127,6 +128,9 @@ h4 {
 
 #showAlert:hover {
     background-image: linear-gradient(to bottom right, white, yellow);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    color: darkgreen;
 }
 
 /* #confirm {
