@@ -10,7 +10,7 @@
 // }
 
 function age() {
-    let a = prompt("Rate this website from 0 to 10 ?")
+    let a = prompt("Rate this website from 0 to 10 !")
     if (a >= 7 && a <= 10) {
         alert("Thank you, for your feedback.")
     }
