@@ -26,7 +26,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="about.html">About</a>
         </li>
 
@@ -146,11 +146,14 @@
       <div class="carousel-item active">
         <img src="images/1.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Welcome to My Website</h2>
-          <p>This is a Portfolio Website</p>
-          <button class="btn btn-danger" onclick="oldWeb()">Old Website</button>
-          <button class="btn btn-primary">Lorem, ipsum.</button>
-          <button class="btn btn-success">Lorem, ipsum.</button>
+          <h2>Portfolio Website</h2>
+          <p>Warm Welcome </p>
+          <button class="btn btn-danger" type="button" data-bs-toggle="button" aria-pressed="true"
+            onclick="oldWeb()">Old Website</button>
+          <button class="btn btn-light btn-lg"><a href="files/sankhadip's Resume.pdf" download="Sankhadip Roy's Resume">
+              <img src="images/faviconDownload.png" alt="download" width="19" height="20">
+              Resume</a></button>
+          <button type="button" class="btn btn-success" disabled>Lorem, ipsum.</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -158,9 +161,9 @@
         <div class="carousel-caption d-none d-md-block">
           <h2>Lorem ipsum dolor sit.</h2>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="btn btn-danger">Lorem, ipsum.</button>
-          <button class="btn btn-primary">Lorem, ipsum.</button>
-          <button class="btn btn-success">Lorem, ipsum.</button>
+          <button class="btn btn-outline-info">Lorem, ipsum.</button>
+          <button class="btn btn-outline-danger btn-sm">Lorem, ipsum.</button>
+          <button class="btn btn-outline-warning">Lorem, ipsum.</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -168,9 +171,11 @@
         <div class="carousel-caption d-none d-md-block">
           <h2>Lorem ipsum dolor sit.</h2>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <button class="btn btn-danger">Lorem, ipsum.</button>
-          <button class="btn btn-primary">Lorem, ipsum.</button>
-          <button class="btn btn-success">Lorem, ipsum.</button>
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger" disabled>Lorem, ipsum.</button>
+            <button type="button" class="btn btn-warning" disabled>Lorem, ipsum.</button>
+            <button type="button" class="btn btn-success" disabled>Lorem, ipsum.</button>
+          </div>
         </div>
       </div>
     </div>
@@ -274,6 +279,7 @@
       </div>
     </div>
   </div>
+
   <footer class="container">
     <p class="float-right"><a href="#">Back to top</a></p>
     <p>© 2022-2023 Sankhadip Roy, Inc. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a
