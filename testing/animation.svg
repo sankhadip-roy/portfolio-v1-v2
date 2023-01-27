@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="700" height="700" fill="none" stroke="black" stroke-width="3">
+    <animate attributeName="x" from="50" to="750" dur="10s" repeatCount="indefinite" />
+  </rect>
+  <circle cx="200" cy="200" r="50" fill="blue">
+    <animate attributeName="cx" from="200" to="600" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="cy" from="200" to="600" dur="10s" repeatCount="indefinite" begin="3s"/>
+  </circle>
+  <circle cx="500" cy="500" r="50" fill="green">
+    <animate attributeName="r" from="50" to="100" dur="10s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  <path d="M 250,50 L 450,250 L 250,450 Z" fill="purple">
+    <animate attributeName="d" from="M 250,50 L 450,250 L 250,450/>
