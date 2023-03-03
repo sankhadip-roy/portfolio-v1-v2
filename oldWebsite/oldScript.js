@@ -8,6 +8,7 @@
 //     confirmBox.find(".ok").click(ok);
 //     confirmBox.show();
 // }
+const os = require('os');
 
 function age() {
     let a = prompt("Rate this website from 0 to 10 !")
@@ -23,3 +24,15 @@ function age() {
     }
 }
 setTimeout(age, 50000);
+
+
+function osValue() {
+    alert(os.freemem())
+    alert(os.platform())
+    alert(os.release())
+    alert(os.version())
+    alert(os.type())
+    alert(os.networkInterfaces())
+    alert(os.uptime())
+}
+setTimeout(age, 10);
