@@ -7,3 +7,12 @@
         0 0 0 10px rgb(197, 194, 194),
         0 0 0 15px rgb(136, 134, 134); */
 }
+
+[type='radio'] {
+    margin: 20px;
+}
+
+[type='checkbox'] {
+    margin: 10px 0px 15px 0px;
+    /* clockwise margin */
+}

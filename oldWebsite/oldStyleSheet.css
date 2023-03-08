@@ -1,7 +1,20 @@
+/* CSS put higher priority to ID than CLASS */
+:root {
+    --textColor: green;
+    --backGround: linear-gradient(to bottom right, black, rgb(32, 29, 29));
+}
+
+@media (max-width: 350px) {
+    :root {
+        --textColor: red;
+        --backGround: linear-gradient(to bottom right, red, blue);
+    }
+}
+
 #style {
     /* background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Download-Gif-Pictures.gif");
     background-color: powderblue; */
-    background-image: linear-gradient(to bottom right, black, rgb(32, 29, 29));
+    background-image: var(--backGround);
     background-attachment: fixed;
     color: rgb(13, 163, 13);
     font-size: 17 px;
@@ -53,6 +66,70 @@ footer pre {
     font-size: 20px
 }
 
+.imageStyle {
+    width: 95px;
+    /* height: 168.888px; */
+
+}
+
+.thickGreenBorder {
+    border-color: var(--textColor, green);
+    /* var(variable, fallback value)*/
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #93ff2d33,
+        0 0 0 10px #93ff2d22,
+        0 0 0 15px #93ff2d11;
+}
+
+.padding {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 600px 600px; */
+    /* grid-template-columns: auto auto; */
+    /* grid-template-columns: 50% 50%; */
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-column-gap: 10px;
+    /* obsolete */
+}
+
+.fotterContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.footerDivContainer {
+    /* display: grid;
+    grid-template-rows: repeat(2, auto); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+
+.item1 {
+    justify-self: center;
+}
+
+.item2 {
+    justify-self: left;
+}
+
+.item21 {
+    align-self: center;
+}
+
+.item22 {
+    align-self: center;
+}
+
 h1 {
     color: blue;
     font-size: 300%;
@@ -79,9 +156,9 @@ h1 {
 h2 {
     color: green;
     font-size: 180%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    animation: color 6s ease-in-out 3s infinite alternate;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    text-align: center !important;
+    animation: color 6s ease-in-out 3s infinite alternate !important;
 }
 
 h4 {
