@@ -8,6 +8,10 @@
         0 0 0 15px rgb(136, 134, 134); */
 }
 
+#pic1 {
+    color: black;
+}
+
 [type='radio'] {
     margin: 20px;
 }
