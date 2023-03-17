@@ -13,7 +13,6 @@
 
 
     <link href="oldStyleSheet.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -30,30 +29,16 @@
                     Website 2.0</a>
             </marquee>
             <div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
-
-                <button id="showAlert">Alert</button>
-                <script>
-                    $("#showAlert").click(function () {
-                        Swal.fire(
-                            "If mobile device: use a Desktop (This website isn't optimized)",
-                        )
-                    });
-                </script>
-                <button id="mode">Theme</button>
-                <script>
-                    $("#mode").click(function () {
-                        document.body.style.color = "red"
-                    });
-                </script>
+                <select>
+                    <option value="green">Green</option>
+                    <option value="white">White</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                </select>
+                <button data-color="red">Theme</button>
+                <button data-color="blue" id="showAlert">Alert</button>
             </div>
-            <!-- <div id="confirm">
-                            <div class="message">If you are using a phone, then switch to Desktop Mode.</div>
-                            <button class="ok">OK</button>
-                        </div> -->
-            <!-- <input type="button" value="Alert" onclick="showAlert();" /> -->
-            <span>
+            <span id="hello">
                 <h2 class="padding">Information</h2>
                 <p> I'm <b>Sankhadip roy</b>, majoring in CSE. This is my
                     first
@@ -134,7 +119,7 @@
         </aside> -->
     </main>
     <hr>
-    <footer class="fotterContainer">
+    <footer class="footerContainer" id="footerId">
         <div class="item1">
             <b>YouTube Video Sample</b><br><br>
             <iframe width="250" height="150" src="https://www.youtube.com/embed/R0swogamAuM"
@@ -161,6 +146,17 @@
         </div>
     </footer>
     <script src="oldScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            $("#showAlert").click(function () {
+                Swal.fire(
+                    "If mobile device: use a Desktop (This website isn't optimized)",
+                )
+            })
+        });
+    </script> -->
 </body>
 
 </html>

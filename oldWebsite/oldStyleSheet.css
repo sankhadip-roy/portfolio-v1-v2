@@ -100,7 +100,7 @@ footer pre {
     /* obsolete */
 }
 
-.fotterContainer {
+.footerContainer {
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
