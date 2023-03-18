@@ -66,6 +66,39 @@ footer pre {
     font-size: 20px
 }
 
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    75% {
+        opacity: 0;
+        height: 100%;
+        line-height: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0px;
+        line-height: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.buttonHide {
+    animation-name: hide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
 .imageStyle {
     width: 95px;
     /* height: 168.888px; */
@@ -276,11 +309,11 @@ h4 {
 }
 
 @keyframes color {
-    0% {
+    from {
         color: red;
     }
 
-    100% {
+    to {
         color: blue;
     }
 }

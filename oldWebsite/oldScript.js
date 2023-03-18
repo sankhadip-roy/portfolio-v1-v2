@@ -59,6 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
+
+//counter
 if (!localStorage.getItem('counter')) {
     localStorage.setItem('counter', 0);
 }
@@ -71,9 +73,11 @@ function count() {
                     give me some suggesion. <caption><u><big><strong>Watchtime: ${Math.trunc(counter / 60)}:${counter % 60} min</strong></big></u></caption></p>`;
     localStorage.setItem('counter', counter);
 }
+
+//h1 change with feedback
 function changeHello() {
     if (counter % 10 != 0 || string == undefined) {
-        heading.innerHTML = `Sankhaip Roy`;
+        heading.innerHTML = `Sankhadip Roy`;
     }
     else {
         heading.innerHTML = `${string}`;
@@ -85,12 +89,41 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(count, 1000);
 })
 
+//alert about mobile responsiveness
 document.addEventListener('DOMContentLoaded', () => {
+    const element1 = document.querySelector('#showAlert');
     $("#showAlert").click(function () {
         Swal.fire(
             "If mobile device: use a Desktop (This website isn't optimized)",
         )
+        element1.remove();
     })
+});
+
+//animation or stop animation
+document.addEventListener('DOMContentLoaded', function () {
+    // const h1 = document.querySelector('h1');
+    // heading.style.animationPlayState = 'paused';
+
+    document.querySelector('#animation'), onclick = () => {
+        if (heading.style.animationPlayState === 'paused') {
+            heading.style.animationPlayState = 'running';
+        } else {
+            heading.style.animationPlayState = 'paused';
+        }
+    }
+});
+
+//hide button
+document.addEventListener('click', event => {
+    const element = event.target;
+    if (element.className === 'hide') {
+        element.parentElement.style.animationPlayState = 'running';
+        element.parentElement.addEventListener('animationend', () => {
+
+            element.parentElement.remove();
+        })
+    }
 });
 
 //Node.js
