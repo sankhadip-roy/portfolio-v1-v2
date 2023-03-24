@@ -17,7 +17,6 @@
     background-image: var(--backGround);
     background-attachment: fixed;
     color: rgb(13, 163, 13);
-    font-size: 17 px;
     font-style: normal;
     font-family: Arial;
     font-size: 1.25em;
@@ -123,19 +122,26 @@ footer pre {
 }
 
 .container {
-    display: grid;
+    /* display: grid; */
     /* grid-template-columns: 600px 600px; */
     /* grid-template-columns: auto auto; */
     /* grid-template-columns: 50% 50%; */
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
 
-    grid-column-gap: 10px;
+    /* grid-column-gap: 10px; */
     /* obsolete */
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footerContainer {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    /* display: grid;
+    grid-template-columns: repeat(2, auto); */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .footerDivContainer {
