@@ -22,8 +22,10 @@
     /* clockwise margin */
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
-    /* remove the gap so it doesn't close */
+@media (min-width: 950px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        /* remove the gap so it doesn't close */
+    }
 }

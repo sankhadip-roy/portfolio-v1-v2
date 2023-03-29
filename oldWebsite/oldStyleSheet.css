@@ -319,7 +319,7 @@ h4 {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 430px) {
     :root {
         --textColor: red;
         --backGround: linear-gradient(to bottom right, red, blue);
