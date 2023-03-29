@@ -72,7 +72,7 @@
               <img src="images/faviconDownload.png" alt="download" width="19" height="20">
               Resume</a></button>
           <button class="btn btn-success" type="button" data-bs-toggle="button" aria-pressed="true"
-            onclick="weatherSite()">Weather Site</button>
+            onclick="startIdea()">StartUp Idea</button>
         </div>
       </div>
       <div class="carousel-item">
@@ -106,7 +106,7 @@
           <h2>Random Work of Mine.</h2>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <button type="button" class="btn btn-danger" onclick="startIdea()">StartUp Idea</button>
+            <button type="button" class="btn btn-danger" disabled>Lorem, ipsum.</button>
             <button type="button" class="btn btn-warning" disabled>Lorem, ipsum.</button>
             <button type="button" class="btn btn-success" disabled>Lorem, ipsum.</button>
           </div>
@@ -130,7 +130,7 @@
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary">Information</strong>
-            <h3 class="mb-0">Sankhadip Roy</h3>
+            <h5 class="mb-0">Sankhadip Roy</h5>
             <div class="mb-1 text-muted">CS (3<sup>rd</sup> sem)</div>
             <p class="card-text mb-auto">This is my website <b>[V 2.0]</b>. Just started full stack webdev. Now most of
               it
@@ -148,7 +148,7 @@
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-success">CloudSkillsBoost</strong>
-            <h3 class="mb-0">Cloud Engineer Learning Path</h3>
+            <h5 class="mb-0">Cloud Engineer Learning Path</h5>
             <div class="mb-1 text-muted">QwikLabs</div>
             <p class="mb-auto"><small><img src="images/faviconQwiklabs.png" alt="qwiklabs" width="25px">12 courses on
                 google
@@ -165,17 +165,55 @@
         </div>
       </div>
     </div>
+
+    <div class="row mb-2">
+      <div id="transform" class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Weather Website</strong>
+            <h5 class="mb-0">Vanilla Js</h5>
+            <div class="mb-1 text-muted">Open Weather api </div>
+            <p class="card-text mb-auto">I have created this site to understand how fetch api works in javascript. Its
+              not yet optimised for small screens.
+            </p>
+            <a href="https://sankhadip-roy.github.io/WeatherSite" class="stretched-link">Check weather</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="images/weather.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="transform" class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Calculator</strong>
+            <h5 class="mb-0">ReactJs</h5>
+            <div class="mb-1 text-muted">Basic</div>
+            <p class="mb-auto">This my first project on react.</p>
+            <a href="https://sankhadip-roy.github.io/calculator_web_app" target="_blank" class="
+              stretched-link">Try it</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="images/calculator.png" alt="">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="row mb-2">
       <div id="transform" class="col-md-6">
         <div
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-danger">Completed</strong>
-            <h3 class="mb-0">MiniProjects</h3>
+            <h5 class="mb-0">Others</h5>
             <div class="mb-1 text-muted">14.01.23</div>
             <!-- <p class="card-text mb-auto"> -->
             <ol type="i">
-              <li><small>Wifi calling & water harvesting system using audrino uno.</small> <br>
+              <li><small>Wifi calling & water harvesting system using audrino uno.</small>
               </li>
               <li><small>Statistics Calculator (1st yr college project).</small> <br></li>
             </ol>
@@ -194,14 +232,17 @@
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-warning">Ongoing</strong>
-            <h3 class="mb-0">Projects</h3>
-            <div class="mb-1 text-muted">10.03.23</div>
+            <h5 class="mb-0">Projects</h5>
+            <div class="mb-1 text-muted">29.03.23</div>
             <p class="mb-auto">
             <ol type="i">
               <li><small>Smart contract using solidity on BlockChain.</small>
                 <br>
               </li>
-              <li><small>Website for weather related data.</small> <br></li>
+
+              <li><small>CS50 Web prject 0.</small>
+                <br>
+              </li>
             </ol>
             </p>
             <a href="files/fundamentalsBlockchain.pptx" class="stretched-link">Fundamentals of Blockchain</a>

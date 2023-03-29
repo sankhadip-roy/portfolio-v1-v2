@@ -2,6 +2,7 @@
     transform: scale(1.05);
     transition-duration: 0.5s;
     font-size: 1.001em;
+    background-color: transparent;
     /* background-color: whitesmoke;
     box-shadow: 0 0 0 5px rgb(238, 236, 236),
         0 0 0 10px rgb(197, 194, 194),
@@ -19,4 +20,10 @@
 [type='checkbox'] {
     margin: 10px 0px 15px 0px;
     /* clockwise margin */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
 }

@@ -1,14 +1,13 @@
-/* CSS put higher priority to ID than CLASS */
 :root {
     --textColor: green;
     --backGround: linear-gradient(to bottom right, black, rgb(32, 29, 29));
 }
 
-@media (max-width: 350px) {
-    :root {
-        --textColor: red;
-        --backGround: linear-gradient(to bottom right, red, blue);
-    }
+* {
+    font-size: 1.03em;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-family: Arial;
 }
 
 #style {
@@ -17,10 +16,6 @@
     background-image: var(--backGround);
     background-attachment: fixed;
     color: rgb(13, 163, 13);
-    font-style: normal;
-    font-family: Arial;
-    font-size: 1.25em;
-    letter-spacing: 0.04em;
     /* flexbox */
     /* display: flex;
     justify-content: center;
@@ -321,5 +316,12 @@ h4 {
 
     to {
         color: blue;
+    }
+}
+
+@media (max-width: 350px) {
+    :root {
+        --textColor: red;
+        --backGround: linear-gradient(to bottom right, red, blue);
     }
 }
