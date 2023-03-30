@@ -1,12 +1,7 @@
 #transform:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
     transition-duration: 0.5s;
-    font-size: 1.001em;
-    background-color: transparent;
-    /* background-color: whitesmoke;
-    box-shadow: 0 0 0 5px rgb(238, 236, 236),
-        0 0 0 10px rgb(197, 194, 194),
-        0 0 0 15px rgb(136, 134, 134); */
+    font-size: 0.995em;
 }
 
 #pic1 {

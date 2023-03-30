@@ -9,77 +9,83 @@
   <link rel="shortcut icon" href="images/faviconHome.png" type="image/x-icon">
 
   <link href="styleSheet.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 
   <title>Home | Sankhadip Roy</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="files/sankhadip's Resume.pdf">Sankhadip Roy</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Options
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="oldWebsite/oldWebsite.html">Website 1.0</a>
-            <a class="dropdown-item" href="files/sankhadip's Resume.pdf" target="_blank">My Resume</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Lorem.</a>
-            <a class="dropdown-item" href="#">Lorem.</a>
-          </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="feedback.html">Feedback</a>
-        </li>
-
-      </ul>
-      <form class="form-inline my-2 my-lg-0" action="https://google.com/search">
-        <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
+  <nav class="navbar bg-dark sticky-top navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="files/sankhadip's Resume.pdf">
+        <img src="images/logo1.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Links
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="oldWebsite/oldWebsite.html">Website 1.0</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="files/sankhadip's Resume.pdf" target="_blank">My Resume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
   </nav>
 
-  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
+  <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-bs-interval="4000">
         <img src="images/1.jpg" class="d-block w-100" alt="...">
         <div id="pic1" class="carousel-caption d-none d-md-block">
-          <h2>Open To Work</h2>
+          <h5>Open To Work</h5>
           <p>Web Dev | Google Cloud | Dsa | Open Source Enthusiast</p>
           <button class="btn btn-danger" type="button" data-bs-toggle="button" aria-pressed="true"
-            onclick="oldWeb()">Website 1.0</button>
-          <button class="btn btn-light btn-lg"><a href="files/sankhadip's Resume.pdf" download="Sankhadip Roy's Resume">
-              <img src="images/faviconDownload.png" alt="download" width="19" height="20">
-              Resume</a></button>
+            onclick="oldWeb()">Website
+            1.0</button>
+          <a class="btn btn-light btn-lg" href="files/sankhadip's Resume.pdf" download="Sankhadip Roy's Resume">
+            <img src="images/faviconDownload.png" alt="download" width="19" height="20">
+            Resume</a>
           <button class="btn btn-success" type="button" data-bs-toggle="button" aria-pressed="true"
-            onclick="startIdea()">StartUp Idea</button>
+            onclick="startIdea()">StartUp
+            Idea</button>
         </div>
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item" data-bs-interval="1500">
         <img src="images/2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Rate this website from 0 to 10 !</h2>
+          <h5>Rate this website from 0 to 10 !</h5>
           <p>Your feedback will motivate me.</p>
-          <!-- <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"> -->
           <div class="btn-group me-2" role="group" aria-label="First group">
             <button type="button" class="btn btn-outline-danger btn-sm">1</button>
             <button type="button" class="btn btn-outline-danger btn-sm">2</button>
@@ -96,14 +102,13 @@
             <button type="button" class="btn btn-outline-success btn-lg">9</button>
             <button type="button" class="btn btn-outline-success btn-lg">10</button>
           </div>
-          <!-- </div> -->
         </div>
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item" data-bs-interval="500">
         <img src="images/3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h2>Lorem ipsum dolor sit.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
           <div class="btn-group" role="group" aria-label="Basic mixed styles example">
             <button type="button" class="btn btn-danger" disabled>Lorem, ipsum.</button>
             <button type="button" class="btn btn-warning" disabled>Lorem, ipsum.</button>
@@ -111,183 +116,186 @@
           </div>
         </div>
       </div>
+    </div> -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-  <div class="container my-4">
-    <div class="row mb-2">
-      <div id="transform" class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Information</strong>
-            <h5 class="mb-0">Sankhadip Roy</h5>
-            <div class="mb-1 text-muted">CS (3<sup>rd</sup> sem)</div>
-            <p class="card-text mb-auto"> <small>This is my website <b>[V 2.0]</b>. Just started full stack webdev. Now
-                most of
-                it
-                is made possible using Bootstrap but will revamp [V 3.0] using react.</small>
-            </p>
-            <a href="feedback.html" class="stretched-link">Give suggesion</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/sankha.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div id="transform" class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">CloudSkillsBoost</strong>
-            <h5 class="mb-0">Cloud Engineer Learning Path</h5>
-            <div class="mb-1 text-muted">QwikLabs</div>
-            <p class="mb-auto"><small><img src="images/faviconQwiklabs.png" alt="qwiklabs" width="25px">12 courses on
-                google
-                cloud engineer
-                learning path completed.</small></p>
-            <a href="https://www.cloudskillsboost.google/public_profiles/7d18dec5-8631-4b54-8bb6-05a57eddc44d"
-              target="_blank" class="
-              stretched-link">See badges</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/thumb2.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2">
-      <div id="transform" class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Completed</strong>
-            <h5 class="mb-0">Mini projects</h5>
-            <!-- <p class="card-text mb-auto"> -->
-            <ol type="i">
-              <li><small>Wifi calling & water harvesting system using audrino uno.</small>
-              </li>
-              <li><small>Statistics Calculator (1st yr college project).</small></li>
-              <li><small>3D car model using ThreeJs.</small></li>
-            </ol>
-            <!-- </p> -->
-            <a href="https://github.com/Sankhadip-Roy/StatisticsCalculator" class="stretched-link">Statistics
-              Calculator</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250"
-              src="https://source.unsplash.com/500x700/?tech,code,laptop" alt="">
-          </div>
-        </div>
-      </div>
-      <div id="transform" class="col-md-6">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-warning">Ongoing</strong>
-            <h5 class="mb-0">Projects</h5>
-            <div class="mb-1 text-muted">29.03.23</div>
-            <p class="mb-auto">
-            <ol type="i">
-              <li><small>Smart contract using solidity on BlockChain.</small>
-                <br>
-              </li>
-              <li><small>CS50 Web prject 0.</small>
-                <br>
-              </li>
-            </ol>
-            </p>
-            <a href="files/fundamentalsBlockchain.pptx" class="stretched-link">Fundamentals of Blockchain</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/projects.jpg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row mb-2">
-      <div id="transform" class="col-md-4">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Weather</strong>
-            <h6 class="mb-0 text-muted">Vanilla Js</h6>
-            <p class="card-text mb-auto"><small>Understanding how fetch api works in
-                javascript.</small>
-            </p>
-            <a href="https://sankhadip-roy.github.io/WeatherSite" class="stretched-link">Try it</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/weather.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      <div id="transform" class="col-md-4">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">Calculator</strong>
-            <h6 class="mb-0 text-muted">ReactJs</h6>
-            <p class="mb-auto"><br><small> This my first project on react.</small></p>
-            <a href="https://sankhadip-roy.github.io/calculator_web_app" target="_blank" class="
-                  stretched-link">Try it</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/calculator.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div id="transform" class="col-md-4">
-        <div
-          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Tic-Tac-Toe</strong>
-            <h6 class="mb-0 text-muted">ReactJs</h6>
-            <p class="card-text mb-auto"><br><small>2nd react project.</small>
-            </p>
-            <a href="https://sankhadip-roy.github.io/tic-tac-toe_web_app" class="stretched-link">Try it</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <img class="bd-placeholder-img" width="200" height="250" src="images/tictactoe.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>© 2022-2023 Sankhadip Roy, Inc. | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a
-        href="https://github.com/Sankhadip-Roy" target="_blank"> <img src="images/faviconGithub.png" alt="Github"
-          width="24px"></a> |
-      <a href="https://www.linkedin.com/in/sankhadip-roy" target="_main"> <img src="images/faviconLinkedin.png"
-          alt="LinkedIn" width="29px"></a> | <a href="https://twitter.com/sankhadiproy23" target="_main"> <img
-          src="images/faviconTwitter.png" alt="Twitter" width="23.5px"></a> |
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div id="transform" class="col-md-6">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Information</strong>
+              <h5 class="mb-0">Sankhadip Roy</h5>
+              <div class="mb-1 text-muted">CS (3<sup>rd</sup> sem)</div>
+              <p class="card-text mb-auto"> <small>This is my website <b>[V 2.0]</b>. Just started full stack webdev.
+                </small>
+              </p>
+              <a class="btn btn-outline-info btn-sm stretched-link" href="feedback.html">Give suggesion</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/sankha.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div id="transform" class="col-md-6">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">CloudSkillsBoost</strong>
+              <h5 class="mb-0">Cloud Engineer Learning Path</h5>
+              <div class="mb-1 text-muted">QwikLabs</div>
+              <p class="mb-auto"><small><img src="images/faviconQwiklabs.png" alt="qwiklabs" width="25px">12 courses on
+                  google
+                  cloud engineer
+                  learning path completed.</small></p>
+              <a class="btn btn-outline-info btn-sm stretched-link"
+                href="https://www.cloudskillsboost.google/public_profiles/7d18dec5-8631-4b54-8bb6-05a57eddc44d"
+                target="_blank">See badges</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/thumb2.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div id="transform" class="col-md-6">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-danger">Completed</strong>
+              <h5 class="mb-0">Mini projects</h5>
+              <!-- <p class="card-text mb-auto"> -->
+              <ol type="i">
+                <li><small>Wifi calling & water harvesting system using audrino uno.</small>
+                </li>
+                <li><small>Statistics Calculator (1st yr clg pr).</small></li>
+                <li><small>3D car model using ThreeJs.</small></li>
+              </ol>
+              <!-- </p> -->
+              <a class="btn btn-outline-warning btn-sm stretched-link"
+                href="https://github.com/Sankhadip-Roy/StatisticsCalculator">Statistics
+                Calculator</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/project.gif" alt="">
+            </div>
+          </div>
+        </div>
+        <div id="transform" class="col-md-6">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning">Ongoing</strong>
+              <h5 class="mb-0">Projects</h5>
+              <div class="mb-1 text-muted">29.03.23</div>
+              <p class="mb-auto">
+              <ol type="i">
+                <li><small>Smart contract using solidity.</small>
+                  <br>
+                </li>
+                <li><small>CS50 Web prject 0.</small>
+                  <br>
+                </li>
+              </ol>
+              </p>
+              <a class="btn btn-outline-warning btn-sm stretched-link"
+                href="files/fundamentalsBlockchain.pptx">Fundamentals of
+                Blockchain</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250"
+                src="https://source.unsplash.com/500x700/?tech,code,laptop" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div id="transform" class="col-md-4">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Weather</strong>
+              <h6 class="mb-0 text-muted">Vanilla Js</h6>
+              <p class="card-text mb-auto"><small>Understanding how fetch api works in
+                  javascript.</small>
+              </p>
+              <a class="btn btn-outline-secondary btn-sm stretched-link"
+                href="https://sankhadip-roy.github.io/WeatherSite">Try it</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/weather.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div id="transform" class="col-md-4">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Calculator</strong>
+              <h6 class="mb-0 text-muted">ReactJs</h6>
+              <p class="mb-auto"><br><small> This my first project on react.</small></p>
+              <a class="btn btn-outline-secondary btn-sm stretched-link"
+                href="https://sankhadip-roy.github.io/calculator_web_app" target="_blank">Try it</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/calculator.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div id="transform" class="col-md-4">
+          <div
+            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Tic-Tac-Toe</strong>
+              <h6 class="mb-0 text-muted">ReactJs</h6>
+              <p class="card-text mb-auto"><br><small>2nd react project.</small>
+              </p>
+              <a class="btn btn-outline-secondary btn-sm stretched-link"
+                href="https://sankhadip-roy.github.io/tic-tac-toe_web_app">Try it</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class="bd-placeholder-img" width="200" height="250" src="images/tictactoe.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <a href="https://www.youtube.com/@crashoverrider8678" target="_blank"> <img src="images/faviconYoutube.jpg"
-          alt="Youtube" width="31px"></a> | <a href="https://linktr.ee/sankhadiproy" target="_main"> <img
-          src="images/faviconLinktree.webp" alt="Linktree" width="22.5px"></a>
-    </p>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <footer class="container">
+      <p class="float-right"><a class="btn btn-light" href="#">Back to top</a></p>
+      <p>© 2022-2023 Sankhadip Roy, Inc. | <a class="btn btn-light disabled" role="button" aria-disabled="true"
+          href="#">Privacy</a> | <a class="btn btn-light disabled" role="button" aria-disabled="true" href="#">Terms</a>
+        | <a href="https://github.com/Sankhadip-Roy" target="_blank"> <img src="images/faviconGithub.png" alt="Github"
+            width="24px"></a> |
+        <a href="https://www.linkedin.com/in/sankhadip-roy" target="_main"> <img src="images/faviconLinkedin.png"
+            alt="LinkedIn" width="29px"></a> | <a href="https://twitter.com/sankhadiproy23" target="_main"> <img
+            src="images/faviconTwitter.png" alt="Twitter" width="23.5px"></a> |
+
+        <a href="https://www.youtube.com/@crashoverrider8678" target="_blank"> <img src="images/faviconYoutube.jpg"
+            alt="Youtube" width="31px"></a> | <a href="https://linktr.ee/sankhadiproy" target="_main"> <img
+            src="images/faviconLinktree.webp" alt="Linktree" width="22.5px"></a>
+      </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
